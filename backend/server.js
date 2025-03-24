@@ -9,11 +9,11 @@ require('dotenv').config(); // Load environment variables
 const {GoogleGenerativeAI} = require("@google/generative-ai");
 
 const app = express();
-const PORT = 5001;
+const PORT = 5000;
 
 // Middleware
 app.use(bodyParser.json());
-app.use(cors({origin: 'http://localhost:3001'}));
+app.use(cors({origin: 'http://localhost:3000'}));
 
 // MongoDB Connection
 mongoose.connect('mongodb://localhost:27017/ai_tutor_lms')
